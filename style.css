@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Playfair+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+  overflow-y: hidden;
+}
+
+.content {
+  background: hsl(217, 19%, 24%);
+  width: 30%;
+  height: fit-content;
+  padding-bottom: 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: -20px;
+  position: relative;
+}
+
+.content > * {
+  margin-top: 20px;
+}
+
+.content p {
+  text-align: center;
+  width: 80%;
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+}
+.content h2 {
+  text-align: center;
+  width: 80%;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: hsl(150, 100%, 66%);
+}
+
+.dice {
+  position: absolute;
+  top: 82%;
+  border-radius: 100%;
+  background: hsl(150, 100%, 66%);
+  padding: 15px;
+}
+
+.dice:hover {
+  box-shadow: 1px 1px 30px 1px hsl(150, 100%, 66%);
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 10px;
+  }
+  .content {
+    width: 80%;
+  }
+}
